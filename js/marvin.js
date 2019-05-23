@@ -5,6 +5,8 @@ $(document).ready(function () {
     var left;
 
     $("#bodyCercle").keydown(function (event) {
+        // connaitre le numéro de la touche
+        // console.log(event.type + " :" + event.which);
         switch (event.which) {
             case 40 :
                 top = "+=100px";
@@ -28,6 +30,10 @@ $(document).ready(function () {
                 left = "-=100px";
                 $("#cerlce").animate({marginLeft: left},500,function (){});
                 console.log("touche de gauche");
+                break;
+
+            case 90:
+                $("#cerlce").css("background-color","yellow");
                 break;
 
             default:return; // exit this handler for other keys
