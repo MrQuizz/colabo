@@ -1,32 +1,32 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    var top = 0;
-    var left = 0;
+    var top;
+    var left;
 
     $("#bodyCercle").keydown(function (event) {
         switch (event.which) {
             case 40 :
-                top = top + 5;
-                $("#cerlce").css("margin-top", top + "px");
+                top = top + 150;
+                $("#cerlce").animate({marginTop: top + "px"},500,function (){});
                 console.log("touche du bas");
                 break;
 
             case 38 :
-                top = top - 5;
-                $("#cerlce").css("margin-top", top + "px");
+                top = top - 150;
+                $("#cerlce").animate({marginTop: top + "px"},500,function (){});
                 console.log("touche du haut");
                 break;
 
             case 39:
-                left = left + 5;
-                $("#cerlce").css("margin-left", left + "px");
+                left = left + 150;
+                $("#cerlce").animate({marginLeft: left + "px"},500,function (){});
                 console.log("touche de droite");
                 break;
 
             case 37:
-                left = left - 5;
-                $("#cerlce").css("margin-left", left + "px");
+                left = left - 150;
+                $("#cerlce").animate({marginLeft: left + "px"},500,function (){});
                 console.log("touche de gauche");
                 break;
 
