@@ -1,8 +1,22 @@
-#cerlce {
+#contenair{
+    display: block;
+    width: 1300px;
+    height: 590px;
+    border: 10px solid black;
+}
+
+#cercle {
+    position: fixed;
     width: 120px;
     height: 120px;
     border-radius: 60px;
     background-color: chocolate;
-    margin-left: 320px;
-    margin-top: 50px;
+    z-index: 1;
+}
+
+.littleCercle {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 }
